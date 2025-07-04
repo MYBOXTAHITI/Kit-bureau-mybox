@@ -323,6 +323,72 @@
             margin-bottom: 1.5rem;
         }
 
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .checkbox-label {
+            display: flex !important;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-bottom: 0.5rem !important;
+            transition: all 0.3s;
+        }
+
+        .checkbox-label:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+            accent-color: #ffd700;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked {
+            background-color: #ffd700;
+        }
+
+        .checkbox-text {
+            color: white;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .checkbox-info {
+            margin-top: 5px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            border-left: 3px solid #ffd700;
+        }
+
+        .checkbox-info small {
+            color: #f0f0f0;
+            line-height: 1.4;
+        }
+
+        .autres-iles-notice {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .autres-iles-notice p {
+            margin: 0;
+            color: #fff3cd;
+            font-size: 0.9rem;
+        }
+
         .form-group select {
             width: 100%;
             padding: 12px 15px;
@@ -479,6 +545,82 @@
             color: #ffd700;
         }
 
+        /* Fiscal Advantages Section */
+        .fiscal-section {
+            background: linear-gradient(135deg, #10ac84 0%, #0e9c75 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .fiscal-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .fiscal-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        .fiscal-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .fiscal-text {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .fiscal-text strong {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .fiscal-cta {
+            margin-top: 2rem;
+        }
+
+        .fiscal-cta .btn-secondary {
+            background: #ffd700;
+            color: #10ac84;
+            border: 2px solid #ffd700;
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .fiscal-cta .btn-secondary:hover {
+            background: white;
+            color: #10ac84;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
         /* Testimonials */
         .testimonials-section {
             background: white;
@@ -514,6 +656,39 @@
         .testimonial-author {
             font-weight: bold;
             color: #2c5ce8;
+        }
+
+        /* Experience Section */
+        .experience-section {
+            background: linear-gradient(135deg, #2c5ce8 0%, #1e4bb8 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .experience-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+        }
+
+        .experience-text {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .experience-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .experience-text strong {
+            color: #ffd700;
         }
 
         /* FAQ */
@@ -712,7 +887,7 @@
     <section class="hero-section">
         <div class="container">
             <h1>MY BOX TAHITI</h1>
-            <p>Votre kit modulaire bureau + sanitaire 17m²<br>Solution modulaire en Polynésie française</p>
+            <p>Votre kit modulaire bureau avec ou sans sanitaire<br>Solution modulaire en Polynésie française</p>
             <div class="cta-buttons">
                 <a href="#calculator" class="btn-primary">
                     📋 Découvrir le Kit Bureau
@@ -789,7 +964,7 @@
                         </div>
                         <div class="carousel-slide">
                             <img src="https://i.ibb.co/pv3ggGWr/KIT-BUREAU-SANITAIRE-BOX.png" alt="Kit Bureau Sanitaire" loading="lazy">
-                            <div class="slide-caption">Kit Bureau + Sanitaire 17m²</div>
+                            <div class="slide-caption">Kit Bureau avec ou sans Sanitaire</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="https://i.ibb.co/cKdYQjx0/KIT-BUREAU-SANITAIRE-SCENE.png" alt="Kit Bureau en situation" loading="lazy">
@@ -814,26 +989,26 @@
             <div class="content-grid">
                 <!-- Product Information -->
                 <div class="product-info">
-                    <h2>KIT MODULAIRE - Bureau + Sanitaire</h2>
-                    <p class="product-description">
+                    <h2 id="productTitle">KIT MODULAIRE - Bureau avec ou sans sanitaire</h2>
+                    <p class="product-description" id="productDescription">
                         Une solution professionnelle moderne et complète, livrée avec 
-                        installation électrique et bloc sanitaire. Montage rapide en 2-3 jours seulement.
+                        installation électrique. Option bloc sanitaire disponible. Montage rapide en 2-3 jours seulement.
                     </p>
                     
-                    <div class="specs-table">
+                    <div class="specs-table" id="specsTable">
                         <div class="specs-row">
                             <span class="specs-label">Dimensions</span>
                             <span class="specs-value">3m × 5,95m × 2,8m</span>
                         </div>
                         <div class="specs-row">
                             <span class="specs-label">Surface utile</span>
-                            <span class="specs-value">17 m²</span>
+                            <span class="specs-value" id="surfaceUtile">17 m²</span>
                         </div>
                         <div class="specs-row">
                             <span class="specs-label">Bureau</span>
-                            <span class="specs-value">12 m²</span>
+                            <span class="specs-value" id="surfaceBureau">12 m²</span>
                         </div>
-                        <div class="specs-row">
+                        <div class="specs-row" id="blocSanitaireRow">
                             <span class="specs-label">Bloc sanitaire</span>
                             <span class="specs-value">5 m²</span>
                         </div>
@@ -843,7 +1018,7 @@
                         </div>
                         <div class="specs-row">
                             <span class="specs-label">Électricité</span>
-                            <span class="specs-value">220V/50Hz incluse</span>
+                            <span class="specs-value">220V/60Hz incluse</span>
                         </div>
                         <div class="specs-row">
                             <span class="specs-label">Structure</span>
@@ -861,8 +1036,9 @@
                     <h3>Calculateur de prix instantané</h3>
                     
                     <div class="form-group">
+                        <label for="location">Sélectionnez votre zone :</label>
                         <select id="location" onchange="updatePrice()">
-                            <option value="">Sélectionnez votre zone</option>
+                            <option value="">Choisir une zone de livraison</option>
                             <optgroup label="TAHITI - Communes principales">
                                 <option value="papeete">Papeete</option>
                                 <option value="pirae">Pirae</option>
@@ -903,33 +1079,41 @@
                         </select>
                     </div>
 
-                    <div class="form-group" id="montageOption" style="display: none;">
-                        <label>
+                    <div class="form-group">
+                        <label for="sanitaire">Configuration :</label>
+                        <select id="sanitaire" onchange="updatePrice()">
+                            <option value="avec">Avec bloc sanitaire (17m²)</option>
+                            <option value="sans">Sans bloc sanitaire (17m²)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
                             <input type="checkbox" id="montage" onchange="updatePrice()"> 
-                            Inclure le montage
+                            <span class="checkbox-text">Inclure le montage</span>
                         </label>
                     </div>
 
-                    <div class="form-group" id="transportOption" style="display: none;">
-                        <label>
+                    <div class="form-group">
+                        <label class="checkbox-label">
                             <input type="checkbox" id="transport" onchange="updatePrice()"> 
-                            Sans le transport
+                            <span class="checkbox-text">Sans le transport</span>
                         </label>
                     </div>
 
-                    <div class="form-group" id="permisOption" style="display: none;">
-                        <label>
+                    <div class="form-group">
+                        <label class="checkbox-label">
                             <input type="checkbox" id="permis" onchange="updatePrice()"> 
-                            Inclure Permis de construire / Déclaration de travaux
+                            <span class="checkbox-text">Inclure Permis de construire / Déclaration de travaux</span>
                         </label>
                     </div>
 
-                    <div class="form-group" id="plotsOption" style="display: none;">
-                        <label>
+                    <div class="form-group">
+                        <label class="checkbox-label">
                             <input type="checkbox" id="plots" onchange="updatePrice()"> 
-                            Plots pilotis
+                            <span class="checkbox-text">Plots pilotis</span>
                         </label>
-                        <div class="plots-info">
+                        <div class="checkbox-info">
                             <small>• Nécessaire pour terrain non stable<br>
                             • 6 plots de fondation inclus</small>
                         </div>
@@ -940,8 +1124,8 @@
                     </div>
 
                     <div class="price-display">
-                        <div class="price-amount" id="priceAmount">1 209 410 XPF</div>
-                        <div class="price-note">(sans transport et options)</div>
+                        <div class="price-amount" id="priceAmount">1 219 720 XPF</div>
+                        <div class="price-note" id="priceNote">avec bloc sanitaire (17m²)</div>
                     </div>
 
                     <button class="generate-pdf" onclick="showQuoteForm()">
@@ -961,7 +1145,7 @@
                     <div class="inclusion-header included">
                         ✅ INCLUS DANS LE PRIX
                     </div>
-                    <ul class="inclusion-list">
+                    <ul class="inclusion-list" id="inclusionList">
                         <li class="inclusion-item included">
                             ✅ Kit modulaire complet structure acier
                         </li>
@@ -971,10 +1155,10 @@
                         <li class="inclusion-item included">
                             ✅ Installation électrique 220V complète
                         </li>
-                        <li class="inclusion-item included">
+                        <li class="inclusion-item included" id="blocSanitaireInclusion">
                             ✅ Bloc sanitaire (WC + douche + lavabo)
                         </li>
-                        <li class="inclusion-item included">
+                        <li class="inclusion-item included" id="plomberieInclusion">
                             ✅ Plomberie complète + robinetterie
                         </li>
                         <li class="inclusion-item included">
@@ -995,7 +1179,7 @@
                         ⚠️ PRESTATIONS NON INCLUSES
                     </div>
                     <p class="inclusion-note">*Évaluation sur site pour un devis clé en main complet :</p>
-                    <ul class="inclusion-list">
+                    <ul class="inclusion-list" id="nonInclusionList">
                         <li class="inclusion-item not-included">
                             ❌ Connexion EDT (électricité)
                         </li>
@@ -1027,7 +1211,7 @@
                 <h2>Précommandez votre Kit Bureau</h2>
                 <p>
                     Soyez parmi les premiers à recevoir votre kit modulaire professionnel. 
-                    Délai de réalisation : 8-11 semaines de la commande à la livraison.
+                    Délai de livraison : 8-11 semaines à partir du 1er versement.
                 </p>
                 
                 <div class="advantages-grid">
@@ -1058,6 +1242,24 @@
         </div>
     </section>
 
+    <!-- Fiscal Advantages Section -->
+    <section class="fiscal-section">
+        <div class="container">
+            <div class="fiscal-content">
+                <div class="fiscal-icon">💰</div>
+                <h2>Avantage Fiscal</h2>
+                <p class="fiscal-text">
+                    Bénéficiez d'un avantage fiscal grâce à notre kit modulaire bureau, <strong>éligible à la défiscalisation locale</strong>, et nous vous accompagnons pour monter votre dossier en toute simplicité.
+                </p>
+                <div class="fiscal-cta">
+                    <a href="https://wa.me/+68989785166" class="btn-secondary">
+                        📋 Demander des informations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="testimonials-section">
         <div class="container">
@@ -1076,6 +1278,18 @@
                         "En tant qu'entrepreneur, j'avais besoin d'un bureau rapidement. MY BOX TAHITI a assuré : livraison et installation sans souci. Depuis, j'y reçois mes clients, je fais mes réunions et je gère mon activité au quotidien dans un cadre pro, calme et bien conçu."
                     </p>
                     <p class="testimonial-author">— Tehina M., Paea</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="experience-content">
+                <h2>MY BOX TAHITI</h2>
+                <div class="experience-text">
+                    <p><strong>Expérience :</strong> 13 ans dans le domaine maritime international et depuis 2016 dans la construction modulaire à base de conteneurs d'expédition et certifié agent d'entretien en bâtiment</p>
                 </div>
             </div>
         </div>
@@ -1143,7 +1357,7 @@
                 <div class="footer-section">
                     <h3>Produits</h3>
                     <ul>
-                        <li><a href="#">Kit Bureau avec sanitaire de 17m2</a></li>
+                        <li><a href="#">Kit Bureau avec ou sans sanitaire</a></li>
                         <li><a href="https://myboxtahiti.github.io/mybox20extensible/" target="_blank">FARE MITI 35m²</a></li>
                     </ul>
                 </div>
@@ -1213,25 +1427,6 @@
     </div>
 
     <script>
-        /*
-        ==========================================
-        🎉 SYSTÈME EMAIL AUTOMATIQUE CONFIGURÉ !
-        ==========================================
-        
-        ✅ Web3Forms configuré avec votre clé : ceb9dfc1-f61f-4624-b16c-c886216a95e3
-        ✅ Email de destination : myboxtahiti@gmail.com
-        ✅ Limite : 1000 emails gratuits par mois
-        
-        🚀 SYSTÈME OPÉRATIONNEL :
-        Chaque devis généré envoie automatiquement un email 
-        avec toutes les informations client directement sur votre Gmail !
-        
-        📧 Double sécurité :
-        - 1er choix : EmailJS (si disponible)  
-        - 2e choix : Web3Forms (votre clé activée)
-        - 3e choix : Mailto (ouverture client email)
-        */
-        
         // ✅ CONFIGURATION EMAILJS - CONFIGURÉ AVEC VOS CLÉS RÉELLES ✅
         const EMAIL_CONFIG = {
             PUBLIC_KEY: '9Xh3mmbRpZr1-gxTw',      // ✅ Votre Public Key EmailJS
@@ -1282,53 +1477,30 @@
             }
         }
 
-        // Backup : vérification périodique si le chargement automatique échoue
-        let emailJSCheckAttempts = 0;
-        function checkEmailJSPeriodically() {
-            emailJSCheckAttempts++;
-            
-            if (typeof emailjs !== 'undefined') {
-                console.log('✅ EmailJS détecté lors de la vérification périodique');
-                initializeEmailJS();
-                return;
-            }
-            
-            if (emailJSCheckAttempts < 10) {
-                setTimeout(checkEmailJSPeriodically, 1000);
-            } else {
-                console.log('⚠️ EmailJS définitivement indisponible - mailto sera utilisé');
-            }
-        }
-
-        // Démarrer la vérification périodique au chargement de la page
-        window.addEventListener('load', function() {
-            setTimeout(checkEmailJSPeriodically, 2000);
-        });
-
-        /*
-        ✅ ÉTAPE 7: ACTIVER LE SYSTÈME
-        1. Remplacez les 3 valeurs YOUR_xxx_HERE par vos vrais identifiants
-        2. Décommentez la ligne emailjs.init() 
-        3. Sauvegardez le fichier
-        4. Testez en générant un devis !
-        
-        🎉 RÉSULTAT
-        Chaque fois qu'un client génère un devis :
-        • Il reçoit le PDF dans son navigateur
-        • VOUS recevez automatiquement un email avec tous les détails
-        • Aucune intervention manuelle requise !
-        
-        ❓ AIDE
-        Si problème : vérifiez dans la console (F12) les messages d'erreur
-        */
-
-        // Configuration des prix (basé sur tarifs officiels)
+        // Configuration des prix avec option sanitaire
         const prices = {
-            base: 732541,       // Kit modulaire bureau + sanitaire (valeur CAF)
-            douane: 356869,     // Formalités douanières et mise à disposition zone portuaire
-            commission: 120000, // Commission MY BOX TAHITI – Suivi projet & coordination
+            // Prix avec sanitaire
+            avec: {
+                base: 734838,      // Kit modulaire bureau + sanitaire (valeur CAF) - NOUVEAU PRIX
+                douane: 364882,    // Formalités douanières - NOUVEAU PRIX
+                commission: 120000, // Commission MY BOX TAHITI
+                permis: 25500,     // 1500 XPF × 17 m²
+                surface: 17,       // Surface totale
+                bureau: 12,        // Surface bureau
+                sanitaire: 5       // Surface sanitaire
+            },
+            // Prix sans sanitaire
+            sans: {
+                base: 690985,      // Kit modulaire bureau sans sanitaire (valeur CAF) - NOUVEAU PRIX
+                douane: 350080,    // Formalités douanières - NOUVEAU PRIX
+                commission: 120000, // Commission MY BOX TAHITI (identique)
+                permis: 25500,     // 1500 XPF × 17 m² (même surface totale)
+                surface: 17,       // Surface totale (tout l'espace devient bureau)
+                bureau: 17,        // Surface bureau (tout l'espace)
+                sanitaire: 0       // Pas de sanitaire
+            },
+            // Prix communs
             montage: 122000,    // Option montage professionnel
-            permis: 25500,      // 1500 XPF × 17 m² (calculé automatiquement)
             plots: 138000,      // 6 plots × 23 000 XPF - TOTALEMENT INDÉPENDANT DU TRANSPORT
             transport: {
                 papeete: 50274,     // 25 137 × 2
@@ -1369,11 +1541,49 @@
             return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
         }
 
-        // Initialiser le prix au chargement
+        // Fonction pour mettre à jour les informations du produit
+        function updateProductInfo(sanitaire) {
+            const productTitle = document.getElementById('productTitle');
+            const productDescription = document.getElementById('productDescription');
+            const surfaceUtile = document.getElementById('surfaceUtile');
+            const surfaceBureau = document.getElementById('surfaceBureau');
+            const blocSanitaireRow = document.getElementById('blocSanitaireRow');
+            const blocSanitaireInclusion = document.getElementById('blocSanitaireInclusion');
+            const plomberieInclusion = document.getElementById('plomberieInclusion');
+
+            // Vérifier que les éléments existent avant de les modifier
+            if (!productTitle || !productDescription || !surfaceUtile || !surfaceBureau) {
+                console.log('⚠️ Certains éléments du produit non trouvés');
+                return;
+            }
+
+            if (sanitaire === 'avec') {
+                productTitle.textContent = 'KIT MODULAIRE - Bureau + Sanitaire';
+                productDescription.textContent = 'Une solution professionnelle moderne et complète, livrée avec installation électrique et bloc sanitaire. Montage rapide en 2-3 jours seulement.';
+                surfaceUtile.textContent = '17 m²';
+                surfaceBureau.textContent = '12 m²';
+                if (blocSanitaireRow) blocSanitaireRow.style.display = 'flex';
+                if (blocSanitaireInclusion) blocSanitaireInclusion.style.display = 'flex';
+                if (plomberieInclusion) plomberieInclusion.style.display = 'flex';
+            } else {
+                productTitle.textContent = 'KIT MODULAIRE - Bureau sans sanitaire';
+                productDescription.textContent = 'Une solution professionnelle moderne et compacte, livrée avec installation électrique. Idéal pour un bureau fonctionnel. Montage rapide en 2-3 jours seulement.';
+                surfaceUtile.textContent = '17 m²';
+                surfaceBureau.textContent = '17 m²';
+                if (blocSanitaireRow) blocSanitaireRow.style.display = 'none';
+                if (blocSanitaireInclusion) blocSanitaireInclusion.style.display = 'none';
+                if (plomberieInclusion) plomberieInclusion.style.display = 'none';
+            }
+        }
+
+        // Initialiser au chargement
         window.onload = function() {
+            // Mettre à jour le prix initial
             updatePrice();
             // Initialiser les inclusions par défaut
-            updateInclusions(false, false, false, false);
+            updateInclusions(false, false, false, false, 'avec');
+            // Initialiser le récapitulatif
+            updateOptionsSummary('avec', null, 0, 0, 0, 0);
         };
 
         // Carousel functionality
@@ -1416,130 +1626,240 @@
         }, 5000); // Change toutes les 5 secondes
 
         function updatePrice() {
+            const sanitaire = document.getElementById('sanitaire').value;
             const location = document.getElementById('location').value;
-            const montageCheckbox = document.getElementById('montage');
-            const transportCheckbox = document.getElementById('transport');
-            const permisCheckbox = document.getElementById('permis');
-            const plotsCheckbox = document.getElementById('plots');
+            const montageChecked = document.getElementById('montage').checked;
+            const transportChecked = document.getElementById('transport').checked;
+            const permisChecked = document.getElementById('permis').checked;
+            const plotsChecked = document.getElementById('plots').checked;
             
-            const montageOption = document.getElementById('montageOption');
-            const transportOption = document.getElementById('transportOption');
-            const permisOption = document.getElementById('permisOption');
-            const plotsOption = document.getElementById('plotsOption');
             const autresIlesInfo = document.getElementById('autresIlesInfo');
-            const priceNote = document.querySelector('.price-note');
+            const priceNote = document.getElementById('priceNote');
             
-            // Réinitialiser les options
-            montageOption.style.display = 'none';
-            transportOption.style.display = 'none';
-            permisOption.style.display = 'none';
-            plotsOption.style.display = 'none';
-            autresIlesInfo.style.display = 'none';
+            // Mettre à jour les informations du produit
+            updateProductInfo(sanitaire);
             
-            // Gérer l'affichage des options selon la zone
-            if (!location) {
-                const baseTotal = prices.base + prices.douane + prices.commission;
-                document.getElementById('priceAmount').textContent = formatAmount(baseTotal) + ' XPF';
-                priceNote.textContent = 'Prix base fixe (sans transport et options)';
-                updateInclusions(false, false, false, false);
-                return;
-            }
-            
-            // Afficher les options selon la zone
-            if (zoneMontage.includes(location)) {
-                montageOption.style.display = 'block';
-                transportOption.style.display = 'block';
-                permisOption.style.display = 'block';
-                plotsOption.style.display = 'block';
-            } else {
-                montageCheckbox.checked = false;
-                transportCheckbox.checked = false;
-                permisCheckbox.checked = false;
-                plotsCheckbox.checked = false;
-                
-                if (location === 'bora' || location === 'raiatea' || location === 'huahine' || location === 'autres') {
+            // Gestion de l'info "autres îles"
+            if (autresIlesInfo) {
+                if (location === 'autres') {
                     autresIlesInfo.style.display = 'block';
+                } else {
+                    autresIlesInfo.style.display = 'none';
                 }
             }
             
             // Calcul du prix total
-            const transportCost = !transportCheckbox.checked ? (prices.transport[location] || 0) : 0;
-            const montageCost = montageCheckbox.checked ? prices.montage : 0;
-            const permisCost = permisCheckbox.checked ? prices.permis : 0;
+            let total = prices[sanitaire].base + prices[sanitaire].douane + prices[sanitaire].commission;
             
-            // Plots pilotis avec surcoût Moorea
+            // Transport (inclus par défaut, sauf si "Sans le transport" est coché)
+            const transportCost = (!transportChecked && location) ? (prices.transport[location] || 0) : 0;
+            total += transportCost;
+            
+            // Montage
+            const montageCost = montageChecked ? prices.montage : 0;
+            total += montageCost;
+            
+            // Permis
+            const permisCost = permisChecked ? prices[sanitaire].permis : 0;
+            total += permisCost;
+            
+            // Plots pilotis (avec surcoût Moorea)
             let plotsCost = 0;
-            if (plotsCheckbox.checked) {
-                plotsCost = prices.plots; // 138 000 XPF de base
+            if (plotsChecked) {
+                plotsCost = prices.plots;
                 if (location === 'moorea') {
-                    plotsCost += 50000; // Surcoût Moorea : bateau + voiture + logement
+                    plotsCost += 50000; // Surcoût Moorea
+                }
+            }
+            total += plotsCost;
+            
+            // Mettre à jour l'affichage du prix
+            document.getElementById('priceAmount').textContent = formatAmount(total) + ' XPF';
+            
+            // Mettre à jour la note
+            if (priceNote) {
+                if (!location) {
+                    priceNote.textContent = `${sanitaire === 'avec' ? 'avec' : 'sans'} bloc sanitaire (17m²) - choisissez une zone pour le transport`;
+                } else {
+                    const locationName = document.querySelector(`option[value="${location}"]`).textContent;
+                    if (transportChecked) {
+                        priceNote.textContent = `pour ${locationName} (sans le transport)`;
+                    } else {
+                        priceNote.textContent = `avec transport sur ${locationName}`;
+                    }
                 }
             }
             
-            const total = prices.base + prices.douane + prices.commission + transportCost + montageCost + permisCost + plotsCost;
-            
-            // Mettre à jour le nom de la zone dans la note
-            const locationName = document.querySelector(`option[value="${location}"]`).textContent;
-            if (!transportCheckbox.checked) {
-                priceNote.textContent = `avec transport sur ${locationName}`;
-            } else {
-                priceNote.textContent = `pour ${locationName} (sans le transport)`;
-            }
-            
-            document.getElementById('priceAmount').textContent = formatAmount(total) + ' XPF';
-            
-            // Mettre à jour les inclusions dynamiquement
+            // SYNCHRONISATION AUTOMATIQUE DES INCLUSIONS
+            const transportInclus = !transportChecked && location;
             updateInclusions(
-                !transportCheckbox.checked, // transport inclus si pas "sans le transport"
-                montageCheckbox.checked,    // montage inclus si coché
-                permisCheckbox.checked,     // permis inclus si coché
-                plotsCheckbox.checked       // plots inclus si coché
+                transportInclus, // transport inclus si pas "sans le transport" ET zone sélectionnée
+                montageChecked,  // montage inclus si case cochée
+                permisChecked,   // permis inclus si case cochée
+                plotsChecked,    // plots inclus si case cochée
+                sanitaire        // configuration sanitaire
             );
         }
 
-        function updateInclusions(transportInclus, montageInclus, permisInclus, plotsInclus) {
-            // Mise à jour de la liste INCLUS
-            const inclusListContainer = document.querySelector('.inclusion-box .included').parentElement;
-            const inclusItems = inclusListContainer.querySelector('.inclusion-list');
+        function updateOptionsSummary(sanitaire, location, transportCost, montageCost, permisCost, plotsCost) {
+            const optionsSummary = document.getElementById('optionsSummary');
+            const summaryContent = document.getElementById('summaryContent');
+            
+            let summaryHTML = '';
+            
+            // Configuration de base
+            summaryHTML += `<div class="summary-item">
+                Kit ${sanitaire === 'avec' ? 'avec sanitaire (17m²)' : 'sans sanitaire (12m²)'}
+                <span class="summary-price">${formatAmount(prices[sanitaire].base + prices[sanitaire].douane + prices[sanitaire].commission)} XPF</span>
+            </div>`;
+            
+            // Transport
+            if (location) {
+                if (transportCost > 0) {
+                    const locationName = document.querySelector(`option[value="${location}"]`).textContent;
+                    summaryHTML += `<div class="summary-item">
+                        ✅ Transport vers ${locationName}
+                        <span class="summary-price">${formatAmount(transportCost)} XPF</span>
+                    </div>`;
+                } else {
+                    summaryHTML += `<div class="summary-item">
+                        ❌ Transport non inclus
+                        <span class="summary-price">0 XPF</span>
+                    </div>`;
+                }
+            } else {
+                summaryHTML += `<div class="summary-item">
+                    ⚠️ Zone de livraison non sélectionnée
+                    <span class="summary-price">0 XPF</span>
+                </div>`;
+            }
+            
+            // Montage
+            if (montageCost > 0) {
+                summaryHTML += `<div class="summary-item">
+                    ✅ Montage professionnel
+                    <span class="summary-price">${formatAmount(montageCost)} XPF</span>
+                </div>`;
+            } else {
+                summaryHTML += `<div class="summary-item">
+                    ❌ Montage non inclus
+                    <span class="summary-price">0 XPF</span>
+                </div>`;
+            }
+            
+            // Permis
+            if (permisCost > 0) {
+                summaryHTML += `<div class="summary-item">
+                    ✅ Permis de construire
+                    <span class="summary-price">${formatAmount(permisCost)} XPF</span>
+                </div>`;
+            } else {
+                summaryHTML += `<div class="summary-item">
+                    ❌ Permis non inclus
+                    <span class="summary-price">0 XPF</span>
+                </div>`;
+            }
+            
+            // Plots
+            if (plotsCost > 0) {
+                summaryHTML += `<div class="summary-item">
+                    ✅ Plots pilotis${location === 'moorea' ? ' (+ surcoût Moorea)' : ''}
+                    <span class="summary-price">${formatAmount(plotsCost)} XPF</span>
+                </div>`;
+            } else {
+                summaryHTML += `<div class="summary-item">
+                    ❌ Plots non inclus
+                    <span class="summary-price">0 XPF</span>
+                </div>`;
+            }
+            
+            summaryContent.innerHTML = summaryHTML;
+            optionsSummary.style.display = 'block';
+        }
+
+        function updateInclusions(transportInclus, montageInclus, permisInclus, plotsInclus, sanitaire) {
+            // Trouver les listes
+            const inclusItems = document.getElementById('inclusionList');
+            const nonInclusItems = document.getElementById('nonInclusionList');
+            
+            if (!inclusItems || !nonInclusItems) {
+                console.error('❌ Impossible de trouver les listes des inclusions');
+                return;
+            }
             
             // Liste de base toujours incluse
             let inclusHTML = `
                 <li class="inclusion-item included">✅ Kit modulaire complet structure acier</li>
                 <li class="inclusion-item included">✅ Isolation laine de roche 50mm</li>
                 <li class="inclusion-item included">✅ Installation électrique 220V complète</li>
-                <li class="inclusion-item included">✅ Bloc sanitaire (WC + douche + lavabo)</li>
-                <li class="inclusion-item included">✅ Plomberie complète + robinetterie</li>
-                <li class="inclusion-item included">✅ Menuiserie (2 portes + 2 fenêtres)</li>
+            `;
+            
+            // Ajouter bloc sanitaire si inclus
+            if (sanitaire === 'avec') {
+                inclusHTML += `
+                    <li class="inclusion-item included">✅ Bloc sanitaire (WC + douche + lavabo)</li>
+                    <li class="inclusion-item included">✅ Plomberie complète + robinetterie</li>
+                `;
+            }
+            
+            inclusHTML += `
+                <li class="inclusion-item included">✅ Menuiserie (porte + 2 fenêtres)</li>
                 <li class="inclusion-item included">✅ Revêtement sol vinyle + plinthes</li>
                 <li class="inclusion-item included">✅ Formalités douanières + commission</li>
             `;
             
-            // Ajouter les options sélectionnées
-            if (transportInclus) inclusHTML += `<li class="inclusion-item included">✅ Transport vers destination</li>`;
-            if (montageInclus) inclusHTML += `<li class="inclusion-item included">✅ Montage sur site</li>`;
-            if (permisInclus) inclusHTML += `<li class="inclusion-item included">✅ Permis de construire / Déclaration de travaux</li>`;
-            if (plotsInclus) inclusHTML += `<li class="inclusion-item included">✅ Plots pilotis (6 plots de fondation)</li>`;
+            // Ajouter les options cochées
+            if (transportInclus) {
+                inclusHTML += `<li class="inclusion-item included">✅ Transport vers destination</li>`;
+            }
+            if (montageInclus) {
+                inclusHTML += `<li class="inclusion-item included">✅ Montage sur site</li>`;
+            }
+            if (permisInclus) {
+                inclusHTML += `<li class="inclusion-item included">✅ Permis de construire / Déclaration de travaux</li>`;
+            }
+            if (plotsInclus) {
+                inclusHTML += `<li class="inclusion-item included">✅ Plots pilotis (6 plots de fondation)</li>`;
+            }
             
+            // Mettre à jour la liste INCLUS
             inclusItems.innerHTML = inclusHTML;
             
-            // Mise à jour de la liste NON INCLUS
-            const nonInclusListContainer = document.querySelector('.inclusion-box .not-included').parentElement;
-            const nonInclusItems = nonInclusListContainer.querySelector('.inclusion-list');
-            
+            // Liste NON INCLUS
             let nonInclusHTML = `
                 <li class="inclusion-item not-included">❌ Connexion EDT (électricité)</li>
-                <li class="inclusion-item not-included">❌ Raccordement eau potable</li>
-                <li class="inclusion-item not-included">❌ Système d'assainissement</li>
                 <li class="inclusion-item not-included">❌ Climatisation</li>
             `;
             
-            // Ajouter les options NON sélectionnées
-            if (!transportInclus) nonInclusHTML += `<li class="inclusion-item not-included">❌ Transport vers destination</li>`;
-            if (!montageInclus) nonInclusHTML += `<li class="inclusion-item not-included">❌ Montage sur site</li>`;
-            if (!permisInclus) nonInclusHTML += `<li class="inclusion-item not-included">❌ Permis de construire / Déclaration de travaux</li>`;
-            if (!plotsInclus) nonInclusHTML += `<li class="inclusion-item not-included">❌ Plots pilotis (selon terrain)</li>`;
+            // Ajouter raccordement eau/assainissement si avec sanitaire
+            if (sanitaire === 'avec') {
+                nonInclusHTML += `
+                    <li class="inclusion-item not-included">❌ Raccordement eau potable</li>
+                    <li class="inclusion-item not-included">❌ Système d'assainissement</li>
+                `;
+            }
             
+            // IMPORTANT : Si "sans sanitaire" est choisi, on ne mentionne PAS
+            // le bloc sanitaire dans les prestations non incluses car c'est évident !
+            
+            // Ajouter les options NON cochées
+            if (!transportInclus) {
+                nonInclusHTML += `<li class="inclusion-item not-included">❌ Transport vers destination</li>`;
+            }
+            if (!montageInclus) {
+                nonInclusHTML += `<li class="inclusion-item not-included">❌ Montage sur site</li>`;
+            }
+            if (!permisInclus) {
+                nonInclusHTML += `<li class="inclusion-item not-included">❌ Permis de construire / Déclaration de travaux</li>`;
+            }
+            if (!plotsInclus) {
+                nonInclusHTML += `<li class="inclusion-item not-included">❌ Plots pilotis (selon terrain)</li>`;
+            }
+            
+            // Mettre à jour la liste NON INCLUS
             nonInclusItems.innerHTML = nonInclusHTML;
+            
+            console.log('✅ Synchronisation terminée - Montage:', montageInclus, 'Permis:', permisInclus, 'Plots:', plotsInclus);
         }
 
         function toggleFAQ(element) {
@@ -1586,6 +1906,7 @@
             }
 
             const clientName = `${clientFirstName} ${clientLastName}`;
+            const sanitaire = document.getElementById('sanitaire').value;
             const location = document.getElementById('location').value || '';
             const locationName = location ? document.querySelector(`option[value="${location}"]`).textContent : 'Non spécifiée';
             
@@ -1597,7 +1918,7 @@
             // Transport : inclus par défaut, exclu si case "Sans le transport" cochée
             const transportCost = !transportChecked ? (prices.transport[location] || 0) : 0;
             const montageCost = montageChecked ? prices.montage : 0;
-            const permisCost = permisChecked ? prices.permis : 0;
+            const permisCost = permisChecked ? prices[sanitaire].permis : 0;
             
             // Plots pilotis avec surcoût Moorea
             let plotsCost = 0;
@@ -1608,11 +1929,11 @@
                 }
             }
             
-            const total = prices.base + prices.douane + prices.commission + transportCost + montageCost + permisCost + plotsCost;
+            const total = prices[sanitaire].base + prices[sanitaire].douane + prices[sanitaire].commission + transportCost + montageCost + permisCost + plotsCost;
             
             // Calcul des échéances selon la nouvelle logique
-            const phase1 = prices.base + prices.commission + permisCost + plotsCost; // Kit + Commission + Permis + Plots
-            const phase2 = prices.douane; // Formalités douanières
+            const phase1 = prices[sanitaire].base + prices[sanitaire].commission + permisCost + plotsCost; // Kit + Commission + Permis + Plots
+            const phase2 = prices[sanitaire].douane; // Formalités douanières
             const phase3 = transportCost + montageCost; // Transport + Montage
             
             // Génération de la référence
@@ -1629,17 +1950,28 @@
                 client_organisme: clientOrganisme || 'Particulier',
                 reference: ref,
                 date: dateStr,
+                configuration: sanitaire === 'avec' ? 'Avec bloc sanitaire (17m²)' : 'Sans bloc sanitaire (17m²)',
                 location: locationName,
                 total_price: formatAmount(total),
                 phase1_amount: formatAmount(phase1),
                 phase2_amount: formatAmount(phase2),
                 phase3_amount: phase3 === 0 ? '0' : formatAmount(phase3),
                 options_selected: [
-                    transportCost > 0 ? 'Transport inclus' : 'Sans le transport',
-                    montageChecked ? 'Montage inclus' : 'Montage non inclus',
-                    permisChecked ? 'Permis inclus' : 'Permis non inclus',
-                    plotsChecked ? 'Plots pilotis inclus' : 'Plots pilotis non inclus'
-                ].join(', ')
+                    `Configuration: ${sanitaire === 'avec' ? 'Avec sanitaire (17m²)' : 'Sans sanitaire (17m²)'}`,
+                    transportCost > 0 ? `Transport inclus (${formatAmount(transportCost)} XPF)` : 'Sans le transport',
+                    montageChecked ? `Montage inclus (${formatAmount(montageCost)} XPF)` : 'Montage non inclus',
+                    permisChecked ? `Permis inclus (${formatAmount(permisCost)} XPF)` : 'Permis non inclus',
+                    plotsChecked ? `Plots pilotis inclus (${formatAmount(plotsCost)} XPF)` : 'Plots pilotis non inclus'
+                ].join(', '),
+                detailed_breakdown: {
+                    base_kit: formatAmount(prices[sanitaire].base),
+                    douane: formatAmount(prices[sanitaire].douane),
+                    commission: formatAmount(prices[sanitaire].commission),
+                    transport: transportCost > 0 ? formatAmount(transportCost) : '0',
+                    montage: montageCost > 0 ? formatAmount(montageCost) : '0',
+                    permis: permisCost > 0 ? formatAmount(permisCost) : '0',
+                    plots: plotsCost > 0 ? formatAmount(plotsCost) : '0'
+                }
             };
 
             // ENVOI AUTOMATIQUE DE L'EMAIL
@@ -1701,7 +2033,7 @@
                 <div class="contact-grid">
                     <div>
                         <div class="info-item">
-                            <span class="info-label">Contact :</span> Hauata Jean-Baptiste
+                            <span class="info-label">MY BOX TAHITI :</span> N° Tahiti : 710194 Tahiti Afaahiti
                         </div>
                         <div class="info-item">
                             <span class="info-label">Téléphone :</span> +689 89 78 51 66
@@ -1712,7 +2044,7 @@
                     </div>
                     <div>
                         <div class="info-item">
-                            <span class="info-label">Expérience :</span> 13 ans dans le domaine maritime international et depuis 2016 dans la construction modulaire à base de conteneurs d'expédition.
+                            <span class="info-label">Expérience :</span> 13 ans dans le domaine maritime international et depuis 2016 dans la construction modulaire à base de conteneurs d'expédition et certifié agent d'entretien en bâtiment
                         </div>
                     </div>
                 </div>
@@ -1745,26 +2077,26 @@
             </div>
         </div>
 
-        <div class="section-title">🏗️ KIT MODULAIRE BUREAU + SANITAIRE – 17 m²</div>
+        <div class="section-title">🏗️ KIT MODULAIRE BUREAU ${sanitaire === 'avec' ? '+ SANITAIRE – 17 m²' : 'SANS SANITAIRE – 17 m²'}</div>
         <div class="product-section">
-            <p><strong>Une solution professionnelle moderne et complète, livrée avec installation électrique et bloc sanitaire. Montage rapide en 2-3 jours seulement.</strong></p>
+            <p><strong>Une solution professionnelle moderne ${sanitaire === 'avec' ? 'et complète, livrée avec installation électrique et bloc sanitaire' : 'et optimisée, livrée avec installation électrique'}. Montage rapide en 2-3 jours seulement.</strong></p>
             <br>
             <ul>
                 <li><strong>Dimensions :</strong> 3m × 5,95m × 2,8m</li>
-                <li><strong>Surface utile :</strong> 17 m²</li>
-                <li><strong>Bureau :</strong> 12 m²</li>
-                <li><strong>Bloc sanitaire :</strong> 5 m²</li>
+                <li><strong>Surface utile :</strong> ${prices[sanitaire].surface} m²</li>
+                <li><strong>Bureau :</strong> ${prices[sanitaire].bureau} m²</li>
+                ${sanitaire === 'avec' ? '<li><strong>Bloc sanitaire :</strong> 5 m²</li>' : ''}
                 <li><strong>Isolation :</strong> 50mm laine de roche</li>
-                <li><strong>Électricité :</strong> 220V/50Hz incluse</li>
+                <li><strong>Électricité :</strong> 220V/60Hz incluse</li>
                 <li><strong>Structure :</strong> Acier galvanisé renforcé</li>
             </ul>
             <br>
             <strong>Inclus :</strong>
             <ul>
-                <li>Espace bureau fonctionnel</li>
-                <li>WC, douche, lavabo</li>
+                <li>Espace bureau fonctionnel${sanitaire === 'sans' ? ' (17m² complets)' : ''}</li>
+                ${sanitaire === 'avec' ? '<li>WC, douche, lavabo</li>' : ''}
                 <li>Installation électrique complète (prises, LED, AC, interrupteur)</li>
-                <li>Plomberie complète + robinetterie</li>
+                ${sanitaire === 'avec' ? '<li>Plomberie complète + robinetterie</li>' : ''}
                 <li>Menuiserie (porte + 2 fenêtres)</li>
                 <li>Revêtement sol vinyle + plinthes</li>
             </ul>
@@ -1780,16 +2112,16 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Kit modulaire bureau + sanitaire (valeur CAF)</td>
-                    <td class="format-amount">${formatAmount(prices.base)} XPF</td>
+                    <td>Kit modulaire bureau ${sanitaire === 'avec' ? '+ sanitaire' : 'sans sanitaire'} (valeur CAF)</td>
+                    <td class="format-amount">${formatAmount(prices[sanitaire].base)} XPF</td>
                 </tr>
                 <tr>
                     <td>Formalités douanières et mise à disposition zone portuaire</td>
-                    <td class="format-amount">${formatAmount(prices.douane)} XPF</td>
+                    <td class="format-amount">${formatAmount(prices[sanitaire].douane)} XPF</td>
                 </tr>
                 <tr>
                     <td>Commission MY BOX TAHITI – Suivi projet & coordination</td>
-                    <td class="format-amount">${formatAmount(prices.commission)} XPF</td>
+                    <td class="format-amount">${formatAmount(prices[sanitaire].commission)} XPF</td>
                 </tr>
                 ${transportCost > 0 ? `<tr>
                     <td>Transport vers ${locationName} (sous réserve de l'accessibilité)</td>
@@ -1800,7 +2132,7 @@
                     <td class="format-amount">${formatAmount(montageCost)} XPF</td>
                 </tr>` : ''}
                 ${permisCost > 0 ? `<tr>
-                    <td>Permis de construire / Déclaration de travaux (17 m²)</td>
+                    <td>Permis de construire / Déclaration de travaux (${prices[sanitaire].surface} m²)</td>
                     <td class="format-amount">${formatAmount(permisCost)} XPF</td>
                 </tr>` : ''}
                 ${plotsCost > 0 ? `<tr>
@@ -1822,11 +2154,13 @@
 
         <div class="non-inclus">
             <h4>❌ PRESTATIONS NON INCLUSES ${transportChecked ? '(à évaluer sur site)' : ''}</h4>
+            <p style="margin-bottom: 15px; font-style: italic; color: #666;"><strong>*Évaluation sur site pour un devis clé en main complet :</strong></p>
             <ul>
                 ${transportChecked ? '<li>Transport vers lieu de livraison</li>' : ''}
                 <li>Connexion EDT (électricité)</li>
-                <li>Raccordement eau potable</li>
-                <li>Système d'assainissement</li>
+                ${sanitaire === 'avec' ? '<li>Raccordement eau potable</li>' : ''}
+                ${sanitaire === 'avec' ? '<li>Système d\'assainissement</li>' : ''}
+                <li>Climatisation</li>
                 ${!plotsChecked ? '<li>Plots pilotis (selon terrain)</li>' : ''}
                 ${!montageChecked && zoneMontage.includes(location) ? '<li>Montage du kit modulaire</li>' : ''}
                 ${!permisChecked ? '<li>Permis de construire / Déclaration de travaux</li>' : ''}
@@ -1869,11 +2203,11 @@
         </table>
 
         <div class="delais-section">
-            <div class="section-title">⏳ DÉLAIS DE RÉALISATION</div>
+            <div class="section-title">⏳ DÉLAIS DE LIVRAISON</div>
             <ul>
-                <li><strong>Production + expédition port d'origine :</strong> 14 jours (après 1er versement)</li>
+                <li><strong>Production en usine :</strong> 14 jours (après 1er versement)</li>
                 <li><strong>Transit maritime :</strong> 46 jours (port de Chine → Papeete)</li>
-                <li><strong>Installation sur site :</strong> ${montageChecked ? 'incluse (2-3 jours)' : 'non incluse (module pré-monté)'}</li>
+                <li><strong>Installation sur site :</strong> ${montageChecked ? 'incluse (2-3 jours)' : 'non incluse'}</li>
                 <li><strong>Validité du devis :</strong> 10 jours</li>
             </ul>
         </div>
@@ -1944,8 +2278,18 @@ Un nouveau devis vient d'être généré sur le site MY BOX TAHITI :
 📋 DÉTAILS DU DEVIS
 • Référence : ${emailData.reference}
 • Date : ${emailData.date}
+• Configuration : ${emailData.configuration}
 • Localisation : ${emailData.location}
 • Prix total : ${emailData.total_price} XPF
+
+💰 DÉCOMPOSITION DES PRIX
+• Kit de base : ${emailData.detailed_breakdown.base_kit} XPF
+• Formalités douanières : ${emailData.detailed_breakdown.douane} XPF
+• Commission MY BOX : ${emailData.detailed_breakdown.commission} XPF
+• Transport : ${emailData.detailed_breakdown.transport} XPF
+• Montage : ${emailData.detailed_breakdown.montage} XPF
+• Permis : ${emailData.detailed_breakdown.permis} XPF
+• Plots pilotis : ${emailData.detailed_breakdown.plots} XPF
 
 💰 RÉPARTITION DES PAIEMENTS
 • Phase 1 : ${emailData.phase1_amount} XPF
@@ -1979,9 +2323,8 @@ Site MY BOX TAHITI`;
             formData.append('to_email', EMAIL_CONFIG.TO_EMAIL);
             formData.append('message', `
 🏗️ PRODUIT COMMANDÉ
-• KIT MODULAIRE BUREAU + SANITAIRE 17m²
+• KIT MODULAIRE BUREAU ${emailData.configuration}
 • Dimensions : 3m × 5,95m × 2,8m
-• Bureau : 12m² + Bloc sanitaire : 5m²
 • Structure acier galvanisé + isolation 50mm
 
 👤 INFORMATIONS CLIENT
@@ -1993,8 +2336,18 @@ Site MY BOX TAHITI`;
 📋 DÉTAILS DU DEVIS
 • Référence : ${emailData.reference}
 • Date : ${emailData.date}
+• Configuration : ${emailData.configuration}
 • Localisation : ${emailData.location}
 • Prix total : ${emailData.total_price} XPF
+
+💰 DÉCOMPOSITION DES PRIX
+• Kit de base : ${emailData.detailed_breakdown.base_kit} XPF
+• Formalités douanières : ${emailData.detailed_breakdown.douane} XPF
+• Commission MY BOX : ${emailData.detailed_breakdown.commission} XPF
+• Transport : ${emailData.detailed_breakdown.transport} XPF
+• Montage : ${emailData.detailed_breakdown.montage} XPF
+• Permis : ${emailData.detailed_breakdown.permis} XPF
+• Plots pilotis : ${emailData.detailed_breakdown.plots} XPF
 
 💰 RÉPARTITION DES PAIEMENTS
 • Phase 1 : ${emailData.phase1_amount} XPF
@@ -2008,8 +2361,6 @@ ${emailData.options_selected}
 • Kit modulaire complet structure acier
 • Isolation laine de roche 50mm
 • Installation électrique 220V complète
-• Bloc sanitaire (WC + douche + lavabo)
-• Plomberie complète + robinetterie
 • Menuiserie (porte + 2 fenêtres)
 • Revêtement sol vinyle + plinthes
 • Formalités douanières + commission
@@ -2043,6 +2394,7 @@ Site MY BOX TAHITI
                 sendEmailViaMailto(emailData);
             });
         }
+
         function showSuccessMessage(message) {
             const notification = document.createElement('div');
             notification.style.cssText = `
@@ -2070,6 +2422,29 @@ Site MY BOX TAHITI
             document.body.appendChild(notification);
             setTimeout(() => notification.remove(), 7000);
         }
+
+        // Backup : vérification périodique si le chargement automatique échoue
+        let emailJSCheckAttempts = 0;
+        function checkEmailJSPeriodically() {
+            emailJSCheckAttempts++;
+            
+            if (typeof emailjs !== 'undefined') {
+                console.log('✅ EmailJS détecté lors de la vérification périodique');
+                initializeEmailJS();
+                return;
+            }
+            
+            if (emailJSCheckAttempts < 10) {
+                setTimeout(checkEmailJSPeriodically, 1000);
+            } else {
+                console.log('⚠️ EmailJS définitivement indisponible - mailto sera utilisé');
+            }
+        }
+
+        // Démarrer la vérification périodique au chargement de la page
+        window.addEventListener('load', function() {
+            setTimeout(checkEmailJSPeriodically, 2000);
+        });
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
